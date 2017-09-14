@@ -153,19 +153,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oQa-HX-U8z" customClass="ContactFullNameView" customModule="MyVC_Demo" customModuleProvider="target">
-                                            <rect key="frame" x="67" y="0.0" width="240" height="44"/>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQa-HX-U8z" customClass="ContactFullNameView" customModule="MyVC_Demo" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="0.0" width="201.5" height="43.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-MD-NFA" customClass="ContactCountDownView" customModule="MyVC_Demo" customModuleProvider="target">
-                                            <rect key="frame" x="315" y="8" width="46" height="28"/>
+                                        <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-MD-NFA" customClass="ContactCountDownView" customModule="MyVC_Demo" customModuleProvider="target">
+                                            <rect key="frame" x="342" y="11.5" width="19" height="20.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="oQa-HX-U8z" firstAttribute="leading" secondItem="4hi-Ro-4BP" secondAttribute="leading" constant="8" id="6PK-z7-hm5"/>
-                                        <constraint firstItem="oQa-HX-U8z" firstAttribute="top" secondItem="4hi-Ro-4BP" secondAttribute="top" constant="20" symbolic="YES" id="Cxr-az-i1L"/>
-                                        <constraint firstAttribute="bottom" secondItem="oQa-HX-U8z" secondAttribute="bottom" constant="20" symbolic="YES" id="QRG-dY-oeH"/>
+                                        <constraint firstItem="oQa-HX-U8z" firstAttribute="top" secondItem="4hi-Ro-4BP" secondAttribute="top" id="Cxr-az-i1L"/>
+                                        <constraint firstAttribute="bottom" secondItem="oQa-HX-U8z" secondAttribute="bottom" id="QRG-dY-oeH"/>
                                         <constraint firstItem="Mbr-MD-NFA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oQa-HX-U8z" secondAttribute="trailing" constant="8" id="f9K-mE-ggl"/>
                                         <constraint firstAttribute="trailing" secondItem="Mbr-MD-NFA" secondAttribute="trailing" constant="14" id="kI2-Cn-mQr"/>
                                         <constraint firstItem="Mbr-MD-NFA" firstAttribute="centerY" secondItem="oQa-HX-U8z" secondAttribute="centerY" id="miJ-MQ-vWa"/>
@@ -212,6 +212,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qYt-88-nWf"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>
