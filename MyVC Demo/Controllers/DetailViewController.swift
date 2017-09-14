@@ -10,15 +10,19 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
+    @IBOutlet weak var contactView: ContactFullNameView?
+    @IBOutlet weak var contactCountDownView: ContactCountDownView?
+    @IBOutlet weak var stepper: UIStepper?
+    
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
+        stepper?.isHidden = true
+        
+        if let contact = contact, let contactView = contactView {
+            contactView.contact = contact
+            contactCountDownView?.contact = contact
+            stepper?.value = Double(contact.countDown)
+            stepper?.isHidden = false
         }
     }
 
@@ -33,13 +37,16 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
+    var contact: ContactModel? {
         didSet {
             // Update the view.
             configureView()
         }
     }
 
-
+    @IBAction func changeCountDown(_ sender: UIStepper) {
+        contact?.countDown = Int(sender.value)
+    }
+    
 }
 
