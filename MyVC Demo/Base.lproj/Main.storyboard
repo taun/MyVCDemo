@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -154,24 +155,32 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQa-HX-U8z" customClass="ContactFullNameView" customModule="MyVC_Demo" customModuleProvider="target">
-                                            <rect key="frame" x="8" y="0.0" width="201.5" height="43.5"/>
+                                            <rect key="frame" x="8" y="4.5" width="201.5" height="34"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
                                         <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-MD-NFA" customClass="ContactCountDownView" customModule="MyVC_Demo" customModuleProvider="target">
-                                            <rect key="frame" x="342" y="11.5" width="19" height="20.5"/>
+                                            <rect key="frame" x="348" y="11" width="19" height="20.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbT-kS-qAK" customClass="ContactCountDownProgressView" customModule="MyVC_Demo" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="39.5" width="359" height="2"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="oQa-HX-U8z" firstAttribute="leading" secondItem="4hi-Ro-4BP" secondAttribute="leading" constant="8" id="6PK-z7-hm5"/>
-                                        <constraint firstItem="oQa-HX-U8z" firstAttribute="top" secondItem="4hi-Ro-4BP" secondAttribute="top" id="Cxr-az-i1L"/>
-                                        <constraint firstAttribute="bottom" secondItem="oQa-HX-U8z" secondAttribute="bottom" id="QRG-dY-oeH"/>
+                                        <constraint firstAttribute="bottom" secondItem="cbT-kS-qAK" secondAttribute="bottom" constant="3" id="4KC-Wt-gD2"/>
+                                        <constraint firstItem="oQa-HX-U8z" firstAttribute="leading" secondItem="4hi-Ro-4BP" secondAttribute="leadingMargin" id="6PK-z7-hm5"/>
+                                        <constraint firstItem="oQa-HX-U8z" firstAttribute="top" secondItem="4hi-Ro-4BP" secondAttribute="top" constant="4" id="Cxr-az-i1L"/>
+                                        <constraint firstItem="cbT-kS-qAK" firstAttribute="leading" secondItem="4hi-Ro-4BP" secondAttribute="leadingMargin" id="Mcw-Q2-796"/>
+                                        <constraint firstAttribute="bottom" secondItem="oQa-HX-U8z" secondAttribute="bottom" constant="6" id="QRG-dY-oeH"/>
                                         <constraint firstItem="Mbr-MD-NFA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oQa-HX-U8z" secondAttribute="trailing" constant="8" id="f9K-mE-ggl"/>
-                                        <constraint firstAttribute="trailing" secondItem="Mbr-MD-NFA" secondAttribute="trailing" constant="14" id="kI2-Cn-mQr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="cbT-kS-qAK" secondAttribute="trailing" id="jg3-dR-0qg"/>
+                                        <constraint firstItem="Mbr-MD-NFA" firstAttribute="trailing" secondItem="4hi-Ro-4BP" secondAttribute="trailingMargin" id="kI2-Cn-mQr"/>
                                         <constraint firstItem="Mbr-MD-NFA" firstAttribute="centerY" secondItem="oQa-HX-U8z" secondAttribute="centerY" id="miJ-MQ-vWa"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="contactCountDownProgressView" destination="cbT-kS-qAK" id="B9k-oc-Jf7"/>
                                     <outlet property="contactCountDownView" destination="Mbr-MD-NFA" id="jG4-kA-JwL"/>
                                     <outlet property="contactView" destination="oQa-HX-U8z" id="BRq-oA-Jv6"/>
                                     <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="qYt-88-nWf"/>
@@ -212,6 +221,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Tll-UG-LXB"/>
+        <segue reference="qYt-88-nWf"/>
     </inferredMetricsTieBreakers>
 </document>

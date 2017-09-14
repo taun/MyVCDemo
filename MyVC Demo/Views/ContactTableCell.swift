@@ -17,6 +17,7 @@ class ContactTableCell: UITableViewCell  {
 
     @IBOutlet weak var contactView: ContactFullNameView!
     @IBOutlet weak var contactCountDownView: ContactCountDownView!
+    @IBOutlet weak var contactCountDownProgressView: ContactCountDownProgressView!
     
     @objc dynamic var contact: ContactModel? {
         didSet {
@@ -43,6 +44,7 @@ class ContactTableCell: UITableViewCell  {
     func viewsNeedUpdating() {
         contactView?.contact = contact
         contactCountDownView?.contact = contact
+        contactCountDownProgressView?.contact = contact
         setNeedsLayout()
     }
 

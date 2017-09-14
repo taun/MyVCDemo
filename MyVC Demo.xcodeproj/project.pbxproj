@@ -27,6 +27,7 @@
 		C56D66771F6A1E80001F95A0 /* ContactTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56D66761F6A1E80001F95A0 /* ContactTableCell.swift */; };
 		C56D66791F6A2963001F95A0 /* ContactTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56D66781F6A2963001F95A0 /* ContactTableSource.swift */; };
 		C56D667B1F6A3283001F95A0 /* ContactCountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56D667A1F6A3283001F95A0 /* ContactCountDownView.swift */; };
+		C56EE7F01F6B3FF600248B0C /* ContactCountDownProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56EE7EF1F6B3FF600248B0C /* ContactCountDownProgressView.swift */; };
 		C5E8A0A11F682CDE00A2E6C0 /* MDKLayerViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E8A0A01F682CDE00A2E6C0 /* MDKLayerViewDesignable.swift */; };
 		C5F699791F68B4F800051048 /* ContactSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F699781F68B4F800051048 /* ContactSummaryView.swift */; };
 		C5F6997B1F68B64D00051048 /* ContactGivenNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6997A1F68B64D00051048 /* ContactGivenNameView.swift */; };
@@ -90,6 +91,7 @@
 		C56D66761F6A1E80001F95A0 /* ContactTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableCell.swift; sourceTree = "<group>"; };
 		C56D66781F6A2963001F95A0 /* ContactTableSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableSource.swift; sourceTree = "<group>"; };
 		C56D667A1F6A3283001F95A0 /* ContactCountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCountDownView.swift; sourceTree = "<group>"; };
+		C56EE7EF1F6B3FF600248B0C /* ContactCountDownProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCountDownProgressView.swift; sourceTree = "<group>"; };
 		C5E8A0A01F682CDE00A2E6C0 /* MDKLayerViewDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MDKLayerViewDesignable.swift; path = "MyVC Demo/MDKLayerViewDesignable.swift"; sourceTree = "<group>"; };
 		C5F699781F68B4F800051048 /* ContactSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSummaryView.swift; sourceTree = "<group>"; };
 		C5F6997A1F68B64D00051048 /* ContactGivenNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactGivenNameView.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				C56D66741F6A0D7D001F95A0 /* ContactFullName.swift */,
 				C56D66761F6A1E80001F95A0 /* ContactTableCell.swift */,
 				C56D667A1F6A3283001F95A0 /* ContactCountDownView.swift */,
+				C56EE7EF1F6B3FF600248B0C /* ContactCountDownProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			files = (
 				C5F699791F68B4F800051048 /* ContactSummaryView.swift in Sources */,
 				C525136B1F65CE74005E1763 /* ContactGroupModel.swift in Sources */,
+				C56EE7F01F6B3FF600248B0C /* ContactCountDownProgressView.swift in Sources */,
 				C5E8A0A11F682CDE00A2E6C0 /* MDKLayerViewDesignable.swift in Sources */,
 				C56D667B1F6A3283001F95A0 /* ContactCountDownView.swift in Sources */,
 				C525132D1F65C705005E1763 /* DetailViewController.swift in Sources */,
