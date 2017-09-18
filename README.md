@@ -15,3 +15,10 @@ It main purpose is to show:
 * How using a custom view prevents the ViewController from needing to know about the model leading to leaner ViewControllers.
 * Custom views are composable and more re-usable.
 * Custom views can easily react to model changes using standard CocoaTouch and Swift 4 patterns. There is no need for RxReact patterns.
+
+
+## Telekinesis
+
+This app also demostrates how PaintCode (Link Needed) can be used to help with easily theming an app. 
+
+Telekinesis is not yet used for the app. Just a PaintCode Stylekit.
