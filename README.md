@@ -2,7 +2,7 @@
 
 This is an iOS application written in Swift 4.0 to demonstrate the continued effectiveness of old school MVC (Model View Controller) when done properly.
 
-This was written to accompany a talk given at the Sept. 14th, 2017, Philadelphia Chapter of CocoaHeads. (Link needed)
+This was written to accompany a talk given at the Sept. 14th, 2017, [Philadelphia Chapter of CocoaHeads](http://phillycocoa.org).
 
 The slides for the talk are located (Link Needed).
 
